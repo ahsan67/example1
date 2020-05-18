@@ -1,18 +1,23 @@
-<!--The Code is Copyright Protected  if you've copied you will be responsible for any problem-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eid Mubarak</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-    <link href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css" rel="stylesheet">
-</head>
-<body onload="loadfun()">
-    <div class="container">
-        <marquee class="technovedant1" behavior="scroll" direction="down" scrolldelay="5"><br>
+	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Sofia:&effect=neon' rel='stylesheet'>
+        <meta name="google" value="notranslate">
+    <meta property="og:type" content="Make your own wonderful wish for you loved one" />
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="https://www.google.com/>
+    <meta property="og:description" content="  " />
+    <meta property="og:site_name" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+			</head>
+      <body onload="toggle()">
+        <div  class="container" id="blur" >
+          <marquee class="technovedant1" behavior="scroll" direction="down" scrolldelay="5"><br>
             <img src="https://goo.gl/LaKMDF" height="129px" width="35px"/><br><br>
             <img src="https://goo.gl/dzUAWB" height="129px" width="35px"/><br><br>
             <img src="https://goo.gl/LaKMDF" height="129px" width="35px"/><br><br>
@@ -56,27 +61,47 @@
             <img src="https://goo.gl/LaKMDF" height="129px" width="35px"/><br><br>
             <img src="https://goo.gl/dzUAWB" height="129px" width="35px"/><br><br>
             </marquee>
-        <div class="small-header">For Promotion, Contact eidmubarak6267@gmail.com</div>
-        
-        <div class="salam">&#129309; Assalam-o-Alaikum! &#129309;</div>
-        <div id="name">&#128073;<span id="name1"></span>👈</div>
-        <div class="salam">😇 is Wishing you in advance😇</div>
-        <div class="eid">💖 EID MUBARAK 😍</div>
-    </div>
-    <div id="formBox" >
-        <input type="text" name="name" id="nameTextBox"  placeholder="Enter Your Name">
-        <div id="goButton" onclick="createGreeting()" >
-        Click
+          <div class="small-header">For Promotion, Contact eidmubarak6267@gmail.com</div>
+          <div class="small-con">
+            <div class="salam"> Assalam-o-Alaikum! <br> <span style="color: red;">Apna nam likh kr dostoo ko bhejen!</span></div>
+            <div id="name" style="background: url(https://1.bp.blogspot.com/-4y_ickVyOeQ/XryZ0jEiGLI/AAAAAAAABmE/Pc_Hpl83fK8KkltKxbrMxHSix1qd3BELQCK4BGAsYHg/s320/Gliter.gif); background-color: white; color: white; font-weight: bold; padding-top: 6px; padding-bottom: 4px; font-size: extralarge;text-align:center; height: 150px; display: flex; justify-content: center; align-items: center;" >👉 <span class="animate__heartBeat"><span id="TECHNOVEDANT-show-name" class="glow"  >Ahsan Azeemi</span></span>👈 </div>
+            <div class="salam">😇 is Wishing you in advance😇</div>
+            <div class="animate__heartBeat" id="eid">💖 EID MUBARAK 😍</div>
+            <div><img src="img1.jpg" class="img"></div>
+            <p><span style="background: dodgerblue; color: white;"> is se pehle k EID ki shaam ho jaye, </span><br><br> <span style="background: green; color: white;"> Mera SMS auron ki tarha aam ho jaye, </span><br><br> <span style="background: red; color: white;"> Sare mob network jaam ho jayen  </span><br><br><span style="background: magenta; color: white;"> Aur EID wish kerna aam ho jaye...</span><br><br> <span style="background: blue; color: white;"> Is lye sb se pehle</span><br><br><span style="color: red;"> EID MUBARAK</p>
+            <div><img src="img2.jpg" class="img"></div>
+            <p><span style="background: magenta; color: white;"> Suna to he k wo aae ge eid pr milne, </span><br><br> <span style="background: green; color: white;"> Agar ye sach he to phr hm wid mna lee ge </span><br><br> </p>
+            <div><img src="img3.jpg" class="img"></div>
+            <p><span style="background: red; color: white;"> Hm na manee ge eid aai he, </span><br><br> <span style="background: dodgerblue; color: white;">Aap aate to eid bhi aati </span><br><br> </p>
+            <div><img src="img4.jpg" class="img"></div>
+            <p><span style="background: blue; color: white;"> Apna naam likhr kr, </span><br><br> <span style="background: green; color: white;"> Apne Dostoo ke sath share kren </span><br><br> </p>
+            <div><img src="down.gif"></div><Br><br><br></Br>
+  
+            <div id="formBox" >
+              <input type="text" name="name" id="nameTextBox"  placeholder="Enter Your Name">
+                <div id="goButton" onclick="createGreeting()" >
+                PRINT
+            </div>
+              </div>
+              <div class="animate__swing">
+                <a class="footerbtn" href="javascript:void(0)" onclick="shareActionWA()"><i class="fab fa-whatsapp"></i> Share with your Friends <i class="fab fa-whatsapp"></i>
+                </a>
+              </div>
+          </div>
+          <footer>
+            <div class="small-header1"><i class="fas fa-copyright"></i> Copyright 2020 ~ Ahsan Azeemi</div>
+          </footer>
         </div>
-      </div>
-      <a class="footerbtn" href="javascript:void(0)" onclick="shareActionWA()">
-        <img width="25px" height="25px" src="https://2.bp.blogspot.com/-wqIwcDNHuLo/W1GSWn4DM7I/AAAAAAAABYk/7uT-lBuXTC0dMt86JLCmVoHKGWKBlClvQCLcBGAs/s1600/technovedan1.png">
-        <b style="font-size: 15px;position:  relative;top: -3px;margin: 0 10px;">Share with your Friends</b>
-        <img width="25px" height="25px" src="https://2.bp.blogspot.com/-wqIwcDNHuLo/W1GSWn4DM7I/AAAAAAAABYk/7uT-lBuXTC0dMt86JLCmVoHKGWKBlClvQCLcBGAs/s1600/technovedan1.png">
-      </a>
-    <footer>
-        <div class="small-header1"><i class="fas fa-copyright"></i> Copyright 2020 ~ Ahsan Azeemi Script</div>
-    </footer>
-    <script src="main.js"></script>
-</body>
-</html>
+			</body>
+					<script src="main.js"></script>
+					<!-- Global site tag (gtag.js) - Google Analytics -->
+					<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145654091-3"></script>
+					<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-145654091-3');
+</script>
+				</body>
+			</html>

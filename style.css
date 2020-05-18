@@ -1,11 +1,10 @@
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif ;
     box-sizing: border-box;
 }
 body{
     margin: 0;
     padding: 0;
-    background: linear-gradient(30deg, #DA22FF, #9733EE);
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
@@ -19,22 +18,30 @@ body{
 }
 
 .salam{
-    color: white;
     padding: 10px;
     text-align: center;
     font-size: 40px;
 }
-#name1{
-    color: white;
-    padding: 10px;
-    text-align: center;
-    font-size: 60px;
-    text-shadow: 1px 1px #fe4902, 
-    2px 2px #fe4902, 
-    3px 3px #fe4902, 
-    4px 4px #fe4902, 
-    5px 5px #fe4902, 
-    6px 6px #fe4902;
+    .glow {
+        font-size: 80px;
+        color: #fff;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+        
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+      }
+.animate__heartBeat{
+    animation-iteration-count: infinite;
 }
 #name{
     font-size: 60px;
@@ -43,24 +50,94 @@ body{
 }
 .technovedant1{position:fixed;left:1%; width:auto;height:100%;top:1%;color:#000;}
 .technovedant2{position:fixed;right:1%; width:auto;height:100%;top:1%;color:#000;}
-.eid{
+#eid{
     font-size: 60px;
     text-align: center;
     padding: 10px;
-    color: white;
 }
+#formBox {
+    left: 0;position: fixed;bottom: 0;display: inline-block;width: 100%;margin: 0;
+  }
+  #nameTextBox {
+    border: 3px solid #000000;text-align: center;display: inline-block;width: 80%;color: black;font-size:16px;margin: 0;background: #eee;height: 48px;font-weight: 700;;padding:8px 0;
+  }
+  #goButton {
+    width: 20%;background: gold;display: inline-block;vertical-align: bottom;border: 3px solid #000000;float: right;color: black;font-size:16px;padding:8px 0;height: 48px;text-align:center;font-weight: 700;
+  }
+.small-con{
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+}
+.container{
+    text-align: center;
+    width: 100%;
+}
+.img{
+    width: 270px;
+}
+.footerbtn{
+    padding: 10px;
+    background: 	#34AF23;
+    text-decoration: none;
+    color: white;
+    left: 0;
+    position: fixed;
+    bottom: 60px;
+    display: inline-block;
+    width: 270px;
+    margin: 0 39%;
+    z-index: 99;
+    border-radius: 20px;
 
+}
 @media only screen and (max-width: 570px) {
+    .small-con{
+        width: 270px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .footerbtn{
+        padding: 10px;
+        background: 	#34AF23;
+        text-decoration: none;
+        color: white;
+        left: 0;
+        position: fixed;
+        bottom: 60px;
+        display: inline-block;
+        width: 270px;
+        margin: 0 30px;
+        z-index: 99;
+        border-radius: 20px;
+    
+    }
     .salam{
         font-size: 18px;
     }
     #name{
-        font-size: 30px;
+        font-size: 20px;
+        
     }
-    .eid{
+    .name1{
+        font-size: 25px;
+    }
+    #eid{
         font-size: 27px;
     }
     .small-header1{
         font-size: 15px;
     }
+    #formBox {
+        left: 0;position: fixed;bottom: 0;display: inline-block;width: 100%;margin: 0;
+      }
+      #nameTextBox {
+        border: 3px solid #000000;text-align: center;display: inline-block;width: 80%;color: black;font-size:16px;margin: 0;background: #eee;height: 48px;font-weight: 700;;padding:8px 0;
+      }
+      #goButton {
+        width: 20%;background: gold;display: inline-block;vertical-align: bottom;border: 3px solid #000000;float: right;color: black;font-size:16px;padding:8px 0;height: 48px;text-align:center;font-weight: 700;
+      }
+      .glow{
+          font-size: 40px;
+      }
 }
